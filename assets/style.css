@@ -1,0 +1,17 @@
+.game-board{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  }
+
+  .game-button{
+  height: 100px;
+  width: 100px;
+  margin: 0;
+  }
+
+  .col-3{
+  max-width: none;
+  }
