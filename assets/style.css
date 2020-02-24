@@ -15,3 +15,10 @@
   .col-3{
   max-width: none;
   }
+
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }

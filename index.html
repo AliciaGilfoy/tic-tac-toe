@@ -20,9 +20,12 @@
 
     <header class="container-fluid bg-dark text-white">
         <div class="row text-center">
-            <div class="col-12">Tic Tac Toe Game</div>
+            <div>
+                <h1>Tic Tac Toe Game</h1>
+                <h3 class="border border-success"> <span id="currentPlayer"> Player 1 </span> </h3>
+            </div>
         </div>
-        <div class="row player-row">
+        <!-- <div class="row player-row">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -55,6 +58,30 @@
                     <a class="dropdown-item" value="guy">
                         <h1><i class="fab fa-studiovinari"></i></h1>
                     </a>
+                </div>
+            </div>
+        </div> -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Start New Game
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="exampleModalLabel">Star a new game!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <button type="button" onclick="app.gameController.startGame(true)" class="btn btn-warning">1
+                            Player</button>
+                        <button type="button" onclick="app.gameController.startGame(false)" class="btn btn-primary">2
+                            Player</button>
+                    </div>
                 </div>
             </div>
         </div>
